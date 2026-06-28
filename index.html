@@ -38,11 +38,14 @@
         font-size: clamp(1rem, 2.5vw, 1.25rem);
     }
     .hero-parallax {
-        background-image: url('data:pronatec.png');
+        background-image: url('pronatec.png');
         background-size: cover;
         background-position: center;
         background-attachment: fixed;
         position: relative;
+        background-size: contain;    /* pra não esticar/cortar o logo */
+        background-color: #0a0a0a;   /* fundo caso o logo tenha transparência */
+}
     }
     @media (max-width: 768px) {
         .hero-parallax {
